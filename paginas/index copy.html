@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Meta tags para codificación de caracteres y ajuste de pantalla -->
+    <meta charset="utf-8">
+    <title>TechWave - Electrodomésticos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Enlace a archivo CSS para estilos del eCommerce -->
+    <link href="eCommerceAssets/styles/eCommerceStyle.css" rel="stylesheet" type="text/css">
+    
+    <style type="text/css">
+        body {
+            background-color: #4850c6;  /* Estilo para color de fondo */
+        }
+        body, td, th {
+            color: #000000; /* Estilo para color de texto */
+        }
+    </style>
+    
+    <!-- Script para descargar fuente desde Adobe Edge Web Fonts -->
+    <script>var __adobewebfontsappname__="dreamweaver"</script>
+    <script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="mainWrapper"> <!-- Contenedor principal de toda la página -->
+
+    <header> 
+        <!-- Encabezado con logo y enlaces de navegación -->
+        <div id="logo"> 
+            <!-- Comentario sobre la imagen del logo deshabilitado -->
+            <!-- <img src="logoImage.png" alt="logo de muestra"> --> 
+            LOGO <!-- Texto alternativo si no hay imagen -->
+        </div>
+        
+        <!-- Enlaces en el encabezado -->
+        <div id="headerLinks">
+            <a href="#" title="Sucursales"><strong>Sucursales</strong></a>
+            <a href="#" title="Iniciar sesión/Registrarse"><strong>Iniciar sesión/Registrarse</strong></a>
+            <a href="#" title="Carrito"><strong>Carrito</strong></a>
+        </div>
+    </header>
+  
+    <section id="offer"> 
+    <!-- Sección de ofertas con título y texto promocional -->
+    <h2>SUBITE A NUESTRA OLA DE OFERTAS!!!</h2>
+    <p>Aprovecha estos descuentos durante todo el mes!!!</p>
+</section>
+
+<style>
+    #offer {
+        position: relative; /* Permite que el texto se posicione sobre el fondo */
+        background-image: url('eCommerceAssets/images/prueba de banner.jpg');
+        background-size: cover; /* Asegura que la imagen cubra toda la sección */
+        background-position: center; /* Centra la imagen */
+        color: white; /* Cambia el color del texto a blanco para mayor contraste */
+        padding: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    #offer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Filtro oscuro con opacidad */
+        z-index: 1;
+    }
+
+    #offer h2, #offer p {
+        position: relative;
+        z-index: 2; /* Asegura que el texto esté por encima del filtro */
+    }
+</style>
+  
+    <div id="content"> <!-- Contenedor para el contenido principal -->
+
+        <section class="sidebar"> 
+            <!-- Barra lateral con cuadro de búsqueda y menús de navegación -->
+            <input type="text" id="search" value="buscar">
+            
+            <div id="menubar"> <!-- Contenedor del menú de navegación -->
+                
+                <!-- Primer conjunto de menús -->
+                <nav class="menu">
+                    <h2>Articulos para el Hogar</h2> <!-- Título del menú -->
+                    <hr> <!-- Línea divisoria -->
+                    <ul>
+                        <!-- Lista de enlaces del menú -->
+                        <li><a href="#" title="Enlace">Heladeras</a></li>
+                        <li><a href="#" title="Enlace">Microondas</a></li>
+                        <li><a href="#" title="Enlace">Ventiladores</a></li>
+                        <li><a href="#" title="Enlace">Aires Acondicionados</a></li>
+                        <li class="notimp">
+                            <!-- Enlace con clase 'notimp' para ocultarlo en tabletas y teléfonos -->
+                            <a href="#"  title="Enlace">Lavarropas&nbsp;</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- Segundo conjunto de menús -->
+                <nav class="menu">
+                    <h2>Especial Informática</h2> <!-- Título del menú -->
+                    <hr> <!-- Línea divisoria -->
+                    <ul>
+                        <!-- Lista de enlaces del menú -->
+                        <li><a href="#" title="Enlace">PC de Escritorio</a></li>
+                        <li><a href="#" title="Enlace">Notebooks</a></li>
+                        <li><a href="#" title="Enlace">All In One</a></li>
+                        <li class="notimp">
+                            <!-- Enlace con clase 'notimp' para ocultarlo en tabletas y teléfonos -->
+                            <a href="#" title="Enlace">Accesorios</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </section>
+    
+        <section class="mainContent"> 
+            <!-- Sección principal de contenido con filas de productos -->
+            
+            <!-- Primera fila de productos -->
+            <div class="productRow">
+                <!-- Descripción de producto individual -->
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p> <!-- Precio del producto -->
+                    <p class="productContent">Contenido del producto</p> <!-- Descripción del producto -->
+                    <input type="button" name="button" value="Comprar" class="buyButton"> <!-- Botón de compra -->
+                </article>
+                
+                <!-- Repetición de otros productos en la misma fila -->
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+                
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+            </div>
+            
+            <!-- Segunda fila de productos -->
+            <div class="productRow">
+                <!-- Repetición de artículos de producto -->
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+                
+                <!-- Otros productos en la misma fila -->
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+                
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+            </div>
+            
+            <!-- Tercera fila de productos -->
+            <div class="productRow">
+                <!-- Repetición de artículos de producto -->
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+                
+                <!-- Otros productos en la misma fila -->
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+                
+                <article class="productInfo">
+                    <div><img alt="muestra" src="eCommerceAssets/images/200x200.png"></div>
+                    <p class="price">$50</p>
+                    <p class="productContent">Contenido del producto</p>
+                    <input type="button" name="button" value="Comprar" class="buyButton">
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <footer> 
+        <!-- Pie de página con suscripción a newsletter y enlaces sociales -->
+        
+        <div id="newsletter">
+            <!-- Formulario de suscripción al newsletter -->
+            <p>Suscribite al NEWSLETTER y enterate de todas las ofertas y promociones.</p>
+            <input type="text" class="form-control" name="name" value="Nombre" style="display: inline-block; width: auto; margin-right: 10px;">
+            <input type="email" class="form-control" name="email" value="Tu Email" style="display: inline-block; width: auto; margin-right: 10px;">
+            <input type="submit" name="contact" class="normal-button" value="Suscribirse" style="display: inline-block; width: auto;">
+        </div>
+        
+        <!-- Información adicional y formulario para manejo de la suscripción -->
+        <div class="col-md-8">
+            <form role="form" method="post" action="/winnie-pooh-newsletter" onsubmit="$(this).attr('action', '');">
+                <input type="hidden" name="message" value="Pedido de inscripción a newsletter">
+            </form>
+        </div>
+        
+        <!-- Texto de contacto en el pie de página -->
+        <div>
+            <p>ESTE ESPACIO DE TEXTO ES PARA AGREGAR DATOS DE CONTACTO / DIRECCION.</p>
+        </div>
+        
+        <!-- Enlaces de redes sociales en el pie de página -->
+        <div class="footerlinks">
+            <p><a href="#" title="Enlace">Facebook</a></p>
+            <p><a href="#" title="Enlace">Instagram</a></p>
+            <p><a href="#" title="Enlace">Contacto</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
